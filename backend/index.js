@@ -68,7 +68,7 @@ const Ticket = mongoose.model('Ticket', ticketSchema)
 
 /* -------------------- Middleware -------------------- */
 app.use(express.json())
-app.use(cors({ origin: [FRONTEND, 'http://localhost:3000'] }))
+app.use(cors({ origin: [FRONTEND] }))
 
 // quick health
 app.get('/api/health', (req,res)=>{
